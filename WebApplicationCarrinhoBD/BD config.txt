@@ -2,17 +2,7 @@ create table Produtos(
 	id int identity,
 	cod varchar(8) not null,
 	descricao varchar(140) not null,
-	quant int not null,
 	valorUni decimal not null,
-	primary key(id)
-)
-
-create table Carrinho(
-	id int identity,
-	descricao varchar(140) not null,
-	quant int not null,
-	valorUni decimal not null,
-	valorTotal decimal not null,
 	primary key(id)
 )
 
@@ -28,6 +18,9 @@ create table ItensVenda (
 	id int identity,
 	idVenda int not null,
 	codProd varchar(8) not null,
+	quant int not null,
 	valorUni decimal not null,
 	primary key(id)
 )
+select * from Produtos
+insert into Produtos values('SFDHF80D', 'Smartphone Samsung J5 Prime DUOS - 32 GB - Ouro branco - GSM', 699.99)

@@ -54,3 +54,5 @@ C:\Users\20161011110020\Desktop\TrabalhoCarrinhoBD\WebApplicationCarrinhoBD\WebA
 C:\Users\20161011110020\Desktop\TrabalhoCarrinhoBD\WebApplicationCarrinhoBD\WebApplicationCarrinhoBD\obj\Debug\WebApplicationCarrinhoBD.csproj.CoreCompileInputs.cache
 C:\Users\20161011110020\Desktop\TrabalhoCarrinhoBD\WebApplicationCarrinhoBD\WebApplicationCarrinhoBD\obj\Debug\WebApplicationCarrinhoBD.dll
 C:\Users\20161011110020\Desktop\TrabalhoCarrinhoBD\WebApplicationCarrinhoBD\WebApplicationCarrinhoBD\obj\Debug\WebApplicationCarrinhoBD.pdb
+C:\Users\20161011110020\Desktop\TrabalhoCarrinhoBD\WebApplicationCarrinhoBD\WebApplicationCarrinhoBD\obj\Debug\WebApplicationCarrinhoBD.csprojAssemblyReference.cache
+C:\Users\20161011110020\Desktop\TrabalhoCarrinhoBD\WebApplicationCarrinhoBD\WebApplicationCarrinhoBD\obj\Debug\WebApplicationCarrinhoBD.csproj.CopyComplete

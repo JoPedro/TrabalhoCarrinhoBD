@@ -11,10 +11,15 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Label1" runat="server" Text="Lista de Produtos"></asp:Label><br />
-            <asp:GridView ID="GridView_Produtos" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="GridView_Produtos" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1">
                 <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
 
                 <Columns>
+                    <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" InsertVisible="False" SortExpression="id"></asp:BoundField>
+                    <asp:BoundField DataField="cod" HeaderText="cod" SortExpression="cod"></asp:BoundField>
+                    <asp:BoundField DataField="descricao" HeaderText="descricao" SortExpression="descricao"></asp:BoundField>
+                    <asp:BoundField DataField="valorUni" HeaderText="valorUni" SortExpression="valorUni" DataFormatString="{0:N2}"></asp:BoundField>
+
                     <asp:ButtonField CommandName="Adicionar" Text="Adicionar"></asp:ButtonField>
                 </Columns>
 
@@ -38,6 +43,7 @@
 
                 <SortedDescendingHeaderStyle BackColor="#4870BE"></SortedDescendingHeaderStyle>
             </asp:GridView>
+            <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:TrabalhoBDConnectionString %>' SelectCommand="SELECT * FROM [Produtos]"></asp:SqlDataSource>
         </div>
     </form>
 </body>
