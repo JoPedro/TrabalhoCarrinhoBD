@@ -1,0 +1,33 @@
+create table Produtos(
+	id int identity,
+	cod varchar(8) not null,
+	descricao varchar(140) not null,
+	quant int not null,
+	valorUni decimal not null,
+	primary key(id)
+)
+
+create table Carrinho(
+	id int identity,
+	descricao varchar(140) not null,
+	quant int not null,
+	valorUni decimal not null,
+	valorTotal decimal not null,
+	primary key(id)
+)
+
+create table Venda (
+	id int identity,
+	dataVenda Date not null,
+	nomeCliente varchar(50) not null,
+	valorTotal decimal not null,
+	primary key(id)
+)
+
+create table ItensVenda (
+	id int identity,
+	idVenda int not null,
+	codProd varchar(8) not null,
+	valorUni decimal not null,
+	primary key(id)
+)

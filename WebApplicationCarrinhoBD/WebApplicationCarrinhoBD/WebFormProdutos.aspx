@@ -14,6 +14,10 @@
             <asp:GridView ID="GridView_Produtos" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
 
+                <Columns>
+                    <asp:ButtonField CommandName="Adicionar" Text="Adicionar"></asp:ButtonField>
+                </Columns>
+
                 <EditRowStyle BackColor="#2461BF"></EditRowStyle>
 
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White"></FooterStyle>
